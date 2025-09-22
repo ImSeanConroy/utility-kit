@@ -23,6 +23,10 @@ var generateMealCmd = &cobra.Command{
 	},
 }
 
+func init() {
+	rootCmd.AddCommand(generateMealCmd)
+}
+
 var meals = map[string][]string{
 	"Quick & Easy": {
 		"Sweet & Sticky Five-Spice Chicken Burger",

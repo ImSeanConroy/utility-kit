@@ -20,6 +20,10 @@ var generatePasswordCmd = &cobra.Command{
 	},
 }
 
+func init() {
+	rootCmd.AddCommand(generatePasswordCmd)
+}
+
 var capitals = []rune("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
 var lowers = []rune("abcdefghijklmnopqrstuvwxyz")
 var numbers = []rune("0123456789")
