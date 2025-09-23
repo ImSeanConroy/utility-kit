@@ -6,6 +6,10 @@ A collection of my most commonly used command-line utilities — things I reach 
 
 - [Getting Started](#getting-started)
 - [Usage](#usage)
+  - [Password Generator](#password-generator)
+  - [Meal Ideas](#meal-ideas)
+  - [Lorem Ipsum Generator](#lorem-ipsum-generator)
+  - [Secret Token Generator](#secret-token-generator)
 - [License](#license)
 - [Support](#support)
 
@@ -42,15 +46,23 @@ Now you can run `kit` from anywhere in your terminal.
 ## Usage
 
 Generate a password:
-
 ```bash
 kit password
 ```
 
 Generate a meal suggestion:
-
 ```bash
 kit meals
+```
+
+Generate lorem ipsum placeholder text:
+```bash
+kit lorem --words 100
+```
+
+Generate a cryptographically secure token:
+```bash
+kit token --length 64
 ```
 
 ## License
